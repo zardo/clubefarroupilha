@@ -1,0 +1,172 @@
+a.cf-sticky {
+
+    text-decoration: none;
+    display: block;
+    position: relative;
+
+    &-main-left {
+        height: 400px;
+    }
+    &-sub-left {
+        height: 200px;
+        margin-top: 20px;
+    }
+    &-main-right {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .cf-sticky-cover {
+        height: 100%;
+        position: relative;
+    }
+
+    .cf-sticky-overlay {
+        background: rgba(0,0,0,0.1);
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        position: absolute;
+        transition: background 0.3s;
+    }
+
+    &:hover .cf-sticky-overlay {
+        background: rgba(0,0,0,0);
+    }
+
+    .cf-sticky-title {
+        bottom: 0;
+        padding: 40px 15px 15px;
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        background: -moz-linear-gradient(top,  rgba(11,43,58,0) 0%, rgba(9,17,17,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(11,43,58,0)), color-stop(100%,rgba(9,17,17,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(11,43,58,0) 0%,rgba(9,17,17,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(11,43,58,0) 0%,rgba(9,17,17,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(11,43,58,0) 0%,rgba(9,17,17,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(11,43,58,0) 0%,rgba(9,17,17,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000b2b3a', endColorstr='#091111',GradientType=0 ); /* IE6-9 */
+
+        h3 {
+            padding: 0;
+            margin: 0;
+            font-size: 22px;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 30px;
+            color: #91d8f7;
+        }
+
+        h5 {
+            padding: 0;
+            margin: 0;
+            font-size: 11px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: white;
+            color: #91d8f7;
+        }
+    }
+
+    &-sub-left .cf-sticky-title {
+        h3 {
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 5px;
+        }
+        h5 {
+            font-size: 9px;
+        }
+    }
+}
+
+.cf-columnists, .cf-economy-section, .cf-latest {
+
+    & > h3 {
+        text-transform: uppercase;
+        border-bottom: 4px solid #efefef;
+        padding-bottom: 5px;
+    }
+
+    .cf-section-post {
+        padding-left: 0;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        .cf-home-post-img {
+            height: 100px;
+            position: relative;
+            transition: opacity 0.3s;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            .cf-sticky-cover {
+                height: 100%;
+                position: relative;
+                display: block;
+            }
+        }
+
+        .cf-home-post-content {
+            h4 > a {
+                font-size: 14px;
+                font-weight: bold;
+                color: #444;
+            }
+
+            h5 > a {
+                text-transform: uppercase;
+                font-size: 11px;
+            }
+
+            &.cf-home-post-img-separator {
+                margin-bottom: 20px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #efefef;
+            }
+        }
+
+        &.cf-section-post-lg {
+            font-size: 15px;
+
+            .cf-home-post-img {
+                height: 200px;
+            }
+
+            .cf-home-post-content {
+                h4 > a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.cf-latest {
+
+    .cf-section-post {
+
+        .cf-home-post-content {
+
+            h4 {
+                margin-top: 0px;
+
+                a {
+                    font-size: 16px;
+                }
+            }
+
+            p {
+
+            }
+
+        }
+
+    }
+
+}
