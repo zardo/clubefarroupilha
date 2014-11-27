@@ -1,0 +1,8 @@
+deployment:
+  staging:
+    branch: master
+    commands:
+      - ssh -i ~/.ssh/id_zar.do root@zar.do
+      - cd /var/www/cf/wp-content/themes/clubefarroupilha/
+      - git pull
+      - grunt production
