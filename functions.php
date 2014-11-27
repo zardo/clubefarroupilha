@@ -1,5 +1,11 @@
 <?php
 
+// VARIABLES
+$CF = [
+    'columnists' => []
+];
+
+
 add_theme_support('post-thumbnails');
 
 function twentyfourteen_wp_title( $title, $sep ) {
